@@ -26,7 +26,7 @@ export default function HomePage() {
         </h1>
 
         <p className="text-base sm:text-lg text-gray-700 px-2 sm:px-4">
-          My journey has just begun, exploring the world of web development and AI.
+          My journey has just begun, exploring the world of Software Development and Artificial Intelligence.
         </p>
 
         {/* CTA buttons */}

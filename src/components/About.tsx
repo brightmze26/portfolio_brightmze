@@ -102,14 +102,14 @@ export default function AboutSection() {
           <Box display="flex" alignItems="center" gap={2}>
             <IoAlbums size={iconSize} />
             <Typography>
-              I have developed over 7 projects using various technologies and stacks.
+              I have developed 7+ projects across various technologies and stacks.
             </Typography>
           </Box>
 
           <Box display="flex" alignItems="center" gap={2}>
             <IoAccessibilitySharp size={iconSize} />
             <Typography>
-              I have over 1 year of experience in Software and AI.
+              I have 1+ years of experience in Software Development and AI
             </Typography>
           </Box>
         </Stack>

@@ -48,12 +48,14 @@ const Tile = styled("div")({
     opacity: 0,
   },
 
-  "&:hover .image-wrapper, &:focus-visible .image-wrapper": {
-    opacity: 1,
-  },
+  "@media (hover: hover)": {
+    "&:hover .image-wrapper, &:focus-visible .image-wrapper": {
+      opacity: 1,
+    },
 
-  "&:hover .overlay-title, &:focus-visible .overlay-title": {
-    opacity: 0,
+    "&:hover .overlay-title, &:focus-visible .overlay-title": {
+      opacity: 0,
+    },
   },
 });
 
@@ -84,7 +86,10 @@ export default function Projects() {
       id="projects"
       className="min-h-screen px-6 py-20 flex flex-col items-center bg-neutral-50"
     >
-      <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
+      <h2 className="text-4xl font-bold text-center mb-4">Projects</h2>
+      <p className="text-gray-600 text-lg text-center max-w-2xl mb-12">
+        A showcase of the projects I've built and the problems I've solved throughout my development journey.
+      </p>
 
       <Box sx={{ width: "100%", maxWidth: 1200, height: "100%" }}>
         <Masonry columns={{ xs: 2, sm: 3, md: 4 }} spacing={2}>

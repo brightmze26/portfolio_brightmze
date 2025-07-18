@@ -13,9 +13,10 @@ import {
   SiPhp,
   SiNodedotjs,
   SiMysql,
-  SiMongodb,
+  SiFirebase,
   SiCypress,
   SiGit,
+  SiThreedotjs,
 } from "react-icons/si";
 
 const skillIcons = [
@@ -29,14 +30,15 @@ const skillIcons = [
   { Icon: SiBootstrap, label: "Bootstrap" },
   { Icon: SiPhp, label: "PHP" },
   { Icon: SiNodedotjs, label: "Node.js" },
+  { Icon: SiThreedotjs, label: "Three.Js" },
   { Icon: SiMysql, label: "MySQL" },
-  { Icon: SiMongodb, label: "MongoDB" },
+  { Icon: SiFirebase, label: "Firebase" },
   { Icon: SiCypress, label: "Cypress" },
   { Icon: SiGit, label: "Git" },
 ];
 
 const experiences = [
-    {
+  {
     year: "2024",
     roles: [
       {
@@ -72,11 +74,15 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="min-h-screen px-6 py-20 flex flex-col items-center bg-whitesmoke"
+      className="min-h-screen px-6 py-20 flex flex-col items-center"
     >
-      <h2 className="text-4xl font-bold text-center mb-12">
+      <h2 className="text-4xl font-bold text-center mb-4">
         Skills&nbsp;&amp;&nbsp;Experiences
       </h2>
+      <p className="text-gray-600 text-lg text-center max-w-2xl mb-12">
+        These are the skills and experiences I’ve built throughout my journey as
+        a developer
+      </p>
 
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12">
         {/* ◀︎ Skill Icons with labels */}
