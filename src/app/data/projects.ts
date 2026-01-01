@@ -11,6 +11,9 @@ import {
   SiNodedotjs,
   SiMysql,
   SiThreedotjs,
+  SiFirebase,
+  SiPython,
+  SiFastapi,
 } from "react-icons/si";
 
 import type { Project } from "../types/project";
@@ -20,7 +23,7 @@ export const projects: Project[] = [
     id: 1,
     src: "/images/project3.jpg",
     height: 260,
-    title: "TalkVideoCall App",
+    title: "Video Conference App",
     desc: "A Zoom-inspired video conferencing app that supports real-time meetings using Next.js, Tailwind CSS, and TypeScript.",
     liveUrl: "https://talk-videocall-app.vercel.app/",
     stack: [
@@ -46,7 +49,7 @@ export const projects: Project[] = [
     id: 3,
     src: "/images/project10.jpg",
     height: 230,
-    title: "E‑Voting PEDRA",
+    title: "E‑Vote PEDRA 2024",
     desc: "An online voting system created for student elections in the Geophysics organization, focused on ensuring voting is secure and easy to manage.",
     liveUrl: "https://pilkahimpedra.site",
     stack: [
@@ -57,21 +60,23 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    src: "/images/project4.jpg",
+    src: "/images/projectp.png",
     height: 240,
-    title: "RUN Competition Website",
-    desc: "A promotional website for a running event, featuring a responsive and visually engaging interface built with modern web tools. Includes a dark/light mode toggle for improved user experience and accessibility.",
+    title: "E-Vote PEDRA 2025",
+    desc: "An online voting system created for student elections in the Geophysics organization, focused on ensuring voting is secure and easy to manage.",
+    liveUrl: "https://pilkahimpedra2025.site",
     stack: [
       { Icon: SiNextdotjs, label: "Next.js" },
       { Icon: SiTailwindcss, label: "Tailwind CSS" },
       { Icon: SiTypescript, label: "TypeScript" },
+      { Icon: SiFirebase, label: "Firebase" },
     ],
   },
   {
     id: 5,
     src: "/images/project6.jpg",
     height: 240,
-    title: "Netflix Clone",
+    title: "Movie Browsing Platform",
     desc: "A movie browsing platform inspired by Netflix, developed with React and Bootstrap to showcase dynamic content and attractive design.",
     stack: [
       { Icon: SiReact, label: "React" },
@@ -94,14 +99,15 @@ export const projects: Project[] = [
   },
   {
     id: 7,
-    src: "/images/project7.jpg",
+    src: "/images/ppp.png",
     height: 220,
-    title: "Bishop UI Shop",
-    desc: "A conceptual shopping website UI built entirely with HTML, CSS, and vanilla JavaScript, focused on layout structure and animation effects.",
+    title: "AI-Assisted Geophysical Analysis",
+    desc: "A web-based geophysical data analysis tool powered by large language models (LLMs), designed to assist interpretation of magnetic data through automated statistical summaries and AI-generated insights.",
     stack: [
-      { Icon: SiHtml5, label: "HTML" },
-      { Icon: SiCss3, label: "CSS" },
-      { Icon: SiJavascript, label: "JavaScript" },
+      { Icon: SiNextdotjs, label: "Next.js" },
+      { Icon: SiTypescript, label: "TypeScript" },
+      { Icon: SiPython, label: "Python" },
+      { Icon: SiFastapi, label: "FastAPI" },
     ],
   },
   {

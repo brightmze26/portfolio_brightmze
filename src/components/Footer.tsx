@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -30,6 +30,14 @@ export default function Footer() {
             className="text-gray-700 hover:text-black transition"
           >
             <FaLinkedin size={24} />
+          </a>
+          <a
+            href="https://github.com/brightmze26"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 hover:text-black transition"
+          >
+            <FaGithub size={24} />
           </a>
         </div>
         <div className="w-full h-px bg-neutral-400 dark:bg-neutral-700 my-6" />

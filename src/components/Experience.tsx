@@ -15,13 +15,13 @@ import {
   SiMysql,
   SiFirebase,
   SiCypress,
-  SiGit,
   SiThreedotjs,
+  SiPython,
+  SiFastapi,
+  SiGit,
 } from "react-icons/si";
 
 const skillIcons = [
-  { Icon: SiHtml5, label: "HTML" },
-  { Icon: SiCss3, label: "CSS" },
   { Icon: SiJavascript, label: "JavaScript" },
   { Icon: SiTypescript, label: "TypeScript" },
   { Icon: SiReact, label: "React" },
@@ -34,6 +34,8 @@ const skillIcons = [
   { Icon: SiMysql, label: "MySQL" },
   { Icon: SiFirebase, label: "Firebase" },
   { Icon: SiCypress, label: "Cypress" },
+  { Icon: SiPython, label: "Python" },
+  { Icon: SiFastapi, label: "FastAPI" },
   { Icon: SiGit, label: "Git" },
 ];
 
@@ -64,7 +66,12 @@ const experiences = [
       {
         title: "Web Developer",
         company: "Geotrap Event",
-        desc: `Developed a fully responsive event website using Next.js, TypeScript, and Tailwind CSS.`,
+        desc: `Developed and deployed a fully responsive event website using Next.js, TypeScript, and Tailwind CSS.`,
+      },
+      {
+        title: "Web Developer",
+        company: "HIMA Geofisika PEDRA",
+        desc: `Designed and deployed an e-voting system using Next.js, TypeScript, Tailwind CSS, and Firebase.`,
       },
     ],
   },
@@ -122,7 +129,7 @@ export default function Experience() {
               </h3>
               <ul className="space-y-4 pl-4 border-l-2 border-gray-300">
                 {roles.map(({ title, company, desc }) => (
-                  <li key={title} className="pl-4 relative">
+                  <li key={`${title}-${company}`} className="pl-4 relative">
                     {/* Removed bullet dot */}
                     <h4 className="font-medium text-gray-700">
                       {title} —{" "}
