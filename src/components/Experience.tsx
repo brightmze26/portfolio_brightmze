@@ -61,7 +61,7 @@ const experiences = [
       {
         title: "AI Training Data",
         company: "Outlier",
-        desc: `Applied programming logic effectively to ensure the language output from the LLM was accurate and relevant.`,
+        desc: `Applied programming logic and multi-language expertise to produce accurate, consistent, and instruction-compliant LLM outputs.`,
       },
       {
         title: "Web Developer",
